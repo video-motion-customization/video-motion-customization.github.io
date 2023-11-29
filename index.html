@@ -62,25 +62,30 @@
         <div class="columns is-centered">
           <div class="column has-text-centered">
             <!-- <h1 class="xtitle is-1 publication-title" style="font-size: 31px;"><strong>VMC</strong></h1><br> -->
-            <h2 class="xtitle is-1 publication-title" style="font-size: 40px;">One-Shot Video Motion Customization using  Temporal Attention Adaption for Text-to-Video Diffusion Models</h2>
+            <h1 class="xtitle is-1 publication-title" style="font-size: 45px;">One-Shot Video Motion Customization using  Temporal Attention Adaption for Text-to-Video Diffusion Models</h1>
             <div class="is-size-5 publication-authors">
             </div>
+            <br>
             <!-- Institution & Conference -->
-            <!-- <div class="is-size-5 publication-authors">
-              <span class="author-block">Institution Name<br>Conferance name and year</span>
-              <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
-            </div> -->
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">Hyeonho Jeong<small><sup>*</sup></small></span>
+              <span class="author-block">Geon Yeong Park<small><sup>*</sup></small></span>
+              <span class="author-block">Jong Chul Ye</span>
+              <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span><br>
+              <span class="eql-cntrb">Korea Advanced Institute of Science and Technology (KAIST)</span>
+            </div>
             <div class="column has-text-centered">
               <div class="publication-links">
                 <!-- Arxiv PDF link -->
-                <!-- <span class="link-block">
-                  <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"class="external-link ">
+                <span class="link-block">
+                  <a href="#" target="_blank"class="external-link ">
+                  <!-- <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"class="external-link "> -->
                     <span class="icon">
                       <i class="fas fa-file-pdf"></i>
                     </span>
                     <span>Paper</span>
                   </a>
-                </span> -->
+                </span>
 
                 <!-- Supplementary PDF link -->
                 <!-- <span class="link-block">
@@ -93,24 +98,33 @@
                 </span> -->
 
                 <!-- Github link -->
-                <!-- <span class="link-block">
-                  <a href="https://github.com/Ground-A-Video/Ground-A-Video" target="_blank" class="external-link ">
+                <span class="link-block">
+                  <a href="https://github.com/HyeonHo99/Video-Motion-Customization" target="_blank" class="external-link ">
                     <span class="icon">
                       <i class="fab fa-github"></i>
                     </span>
                     <span>Code</span>
                   </a>
-                </span> -->
+                </span>
 
                 <!-- ArXiv abstract Link -->
-                <!-- <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank" class="external-link ">
+                <span class="link-block">
+                  <a href="https://drive.google.com/drive/folders/1GUDnosOkYQ50-1bHHIBitRMeamkd2qao?usp=drive_link" target="_blank" class="external-link ">
                     <span class="icon">
-                      <i class="ai ai-arxiv"></i>
+                      <i class="fas fa-video"></i>
                     </span>
-                    <span>arXiv</span>
+                    <span>Data (gif)</span>
                   </a>
-                </span> -->
+                </span>
+
+                <span class="link-block">
+                  <a href="https://drive.google.com/drive/folders/1L4dIqeK52lGBuxIKAEUzZgOEP95dz7AC?usp=drive_link" target="_blank" class="external-link ">
+                    <span class="icon">
+                      <i class="fas fa-image"></i>
+                    </span>
+                    <span>Data (png)</span>
+                  </a>
+                </span>
               </div>
             </div>
           </div>
@@ -120,17 +134,14 @@
   </section>
 
 
+
 <section class="hero teaser">
 <div class="is-max-desktop">
 
-
-<div id="results" style='background-color: rgb(255, 255, 255)'>
+<div id="results" style='background-color: rgb(243, 242, 242)'>
   <br>
-  <h2 class="tldr" style="font-size: 28px;">Video Motion Customization Results</h2>
-  <h3 class="tldr" style="font-size: 20px;"> Low-resolution, Short Input Video &#10230; High-resolution, Long Output Video</h3>
-  <br>
+  <h3 class="tldr" style="font-size: 26px;">Video Motion Customization</h3>
   <div>
-    <h2 class="tldr" style="font-size: 28px;">Motion of Sharks</h2>
     <table style="width: 98%;margin-left:auto;margin-right:auto; text-align: center; border-spacing: 4px; border-collapse: separate; ">
       <tbody>
         <tr>
@@ -152,7 +163,7 @@
             <img src="static/gifs/sharks_swimming/iron_sky.gif" width="500">
 
             <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
-              Iron Sharks + <i style="color: red;">M</i> + In the sky
+              Iron Sharks + <i style="color: red;">M</i> + In the sky<br><br>
             </div>
           </th>
         </tr>
@@ -175,9 +186,68 @@
         </tr>
       </tbody>
     </table>
-    <br><br><br>
+  </div>
+  <br>
+</div>
 
-    <h2 class="tldr" style="font-size: 28px;">Motion of Cars</h2>
+
+<!-- Paper abstract -->
+<section class="section hero is-light" style='background-color: white'>
+  <div class="container is-max-desktop" >
+    <div class="columns is-centered has-text-centered" >
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Text-to-video diffusion models have advanced video generation significantly. 
+            However, customizing these models to generate videos with tailored motions presents a substantial challenge. 
+            In specific, they encounter hurdles in 
+            (1) <u>accurately reproducing motion from a target video</u>, 
+            and (2) <u>creating diverse visual variations</u>. 
+            For example, straightforward extensions of static image customization methods to video often lead to intricate entanglements of appearance and motion data. 
+            To tackle this, here we present the Video Motion Customization (<b style="color:black;">VMC</b>) framework, 
+            a novel one-shot tuning approach crafted to adapt temporal attention layers within video diffusion models. 
+            Our approach introduces a novel <i>motion distillation objective</i> using residual vectors between consecutive noisy latent frames as a motion reference. 
+            The diffusion  process then preserve low-frequency motion trajectories while mitigating high-frequency motion-unrelated noise in image space. 
+            We validate our method against state-of-the-art video generative models across diverse real-world motions and contexts. 
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Paper overview -->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body has-text-justified">
+      <br>
+      <br>
+      <h2 class="title is-3">Overview</h2>
+      <br>
+      <img class="center-img center" src="static/images/figure-overview.png" width="100%">
+      <br>
+      <h3 class="subtitle" style="font-size: 18px;">
+        The proposed Video Motion Customization (<strong>VMC</strong>) framework distills the motion trajectories 
+        from the residual between noisy latent frames, namely motion vector <strong>$\delta v_t^n$</strong>. 
+        Specifically, we fine-tune only the temporal attention layers of the key-frame generation model 
+        by aligning the ground-truth and predicted motion vectors. 
+        After training, the customized key-frame generator is leveraged for target motion-driven video generation 
+        with new appearances context, e.g. <i>"A chicken is walking in a city"</i>.
+      </h3>
+    </div>
+  </div>
+</section>
+
+
+<div id="results" style='background-color: rgb(243, 242, 242)'>
+  <br>
+  <h2 class="tldr" style="font-size: 26px;">Video Motion Customization Results</h2>
+  <h3 class="tldr" style="font-size: 18px;"> from Low-resolution & Short Input Video to High-resolution, Long Output Video</h3>
+  <br>
+
+    <h2 class="tldr" style="font-size: 22px;">Motion of Cars</h2>
     <table style="width: 98%;margin-left:auto;margin-right:auto; text-align: center; border-spacing: 4px; border-collapse: separate; ">
       <tbody>
         <tr>
@@ -341,7 +411,7 @@
     </table>
     <br><br><br>
 
-    <h2 class="tldr" style="font-size: 28px;">Motion of Airplanes</h2>
+    <h2 class="tldr" style="font-size: 22px;">Motion of Airplanes</h2>
     <table style="width: 98%;margin-left:auto;margin-right:auto; text-align: center; border-spacing: 4px; border-collapse: separate; ">
       <tbody>
         <tr>
@@ -415,7 +485,7 @@
     <br><br><br>
 
 
-    <h2 class="tldr" style="font-size: 28px;">Motion of Birds (flying)</h2>
+    <h2 class="tldr" style="font-size: 22px;">Motion of Birds (flying)</h2>
     <table style="width: 98%;margin-left:auto;margin-right:auto; text-align: center; border-spacing: 4px; border-collapse: separate; ">
       <tbody>
         <tr>
@@ -445,7 +515,7 @@
     </table>
     <br><br><br>
 
-    <h2 class="tldr" style="font-size: 28px;">Motion of Birds (taking off)</h2>
+    <h2 class="tldr" style="font-size: 22px;">Motion of Birds (taking off)</h2>
     <table style="width: 98%;margin-left:auto;margin-right:auto; text-align: center; border-spacing: 4px; border-collapse: separate; ">
       <tbody>
         <tr>
@@ -482,7 +552,7 @@
     </table>
     <br><br><br>
 
-    <h2 class="tldr" style="font-size: 28px;">Motion of Birds (walking)</h2>
+    <h2 class="tldr" style="font-size: 22px;">Motion of Birds (walking)</h2>
     <table style="width: 98%;margin-left:auto;margin-right:auto; text-align: center; border-spacing: 4px; border-collapse: separate; ">
       <tbody>
         <tr>
@@ -592,7 +662,7 @@
     </table>
     <br><br><br>
 
-    <h2 class="tldr" style="font-size: 28px;">Motion of Birds (floating)</h2>
+    <h2 class="tldr" style="font-size: 22px;">Motion of Birds (floating)</h2>
     <table style="width: 98%;margin-left:auto;margin-right:auto; text-align: center; border-spacing: 4px; border-collapse: separate; ">
       <tbody>
         <tr>
@@ -639,7 +709,7 @@
     </table>
     <br><br><br>
 
-    <h2 class="tldr" style="font-size: 28px;">Motion of Human</h2>
+    <h2 class="tldr" style="font-size: 22px;">Motion of Human</h2>
     <table style="width: 98%;margin-left:auto;margin-right:auto; text-align: center; border-spacing: 4px; border-collapse: separate; ">
       <tbody>
         <tr>
@@ -712,7 +782,7 @@
     </table>
     <br><br><br>
 
-    <h2 class="tldr" style="font-size: 28px;">Motion of Plants</h2>
+    <h2 class="tldr" style="font-size: 22px;">Motion of Plants</h2>
     <table style="width: 98%;margin-left:auto;margin-right:auto; text-align: center; border-spacing: 4px; border-collapse: separate; ">
       <tbody>
         <tr>
@@ -749,7 +819,7 @@
     </table>
     <br><br><br>
 
-    <h2 class="tldr" style="font-size: 28px;">Motion of Diffusion</h2>
+    <h2 class="tldr" style="font-size: 22px;">Motion of Diffusion</h2>
     <table style="width: 98%;margin-left:auto;margin-right:auto; text-align: center; border-spacing: 4px; border-collapse: separate; ">
       <tbody>
         <tr>
@@ -787,7 +857,7 @@
     <br><br><br>
 
 
-    <h2 class="tldr" style="font-size: 28px;">Motion of Fall</h2>
+    <h2 class="tldr" style="font-size: 22px;">Motion of Fall</h2>
     <table style="width: 98%;margin-left:auto;margin-right:auto; text-align: center; border-spacing: 4px; border-collapse: separate; ">
       <tbody>
         <tr>
@@ -854,7 +924,7 @@
     </table>
     <br><br><br>
 
-    <h2 class="tldr" style="font-size: 28px;">Motion of Space</h2>
+    <h2 class="tldr" style="font-size: 22px;">Motion of Space</h2>
     <table style="width: 98%;margin-left:auto;margin-right:auto; text-align: center; border-spacing: 4px; border-collapse: separate; ">
       <tbody>
         <tr>
@@ -884,7 +954,7 @@
     </table>
     <br><br><br>
 
-    <h2 class="tldr" style="font-size: 28px;">Motion of Huge animals</h2>
+    <h2 class="tldr" style="font-size: 22px;">Motion of Huge animals</h2>
     <table style="width: 98%;margin-left:auto;margin-right:auto; text-align: center; border-spacing: 4px; border-collapse: separate; ">
       <tbody>
         <tr>
@@ -1015,7 +1085,7 @@
     </table>
     <br><br><br>
     
-    <h2 class="tldr" style="font-size: 28px;">Motion of Small animals</h2>
+    <h2 class="tldr" style="font-size: 22px;">Motion of Small animals</h2>
     <table style="width: 98%;margin-left:auto;margin-right:auto; text-align: center; border-spacing: 4px; border-collapse: separate; ">
       <tbody>
         <tr>
@@ -1181,9 +1251,12 @@
 </div>
 
 
-
-
-
+<div id="results" >
+  <br>
+  <h2 class="tldr" style="font-size: 26px;">Comparisons to Baselines</h2>
+  <h3 class="tldr" style="font-size: 18px;"> To Be Updated</h3>
+  <br>
+</div>
 
 
 
