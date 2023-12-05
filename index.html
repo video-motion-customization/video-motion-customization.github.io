@@ -244,7 +244,7 @@
       <br>
       <h3 class="subtitle" style="font-size: 18px;">
         The proposed Video Motion Customization (<strong>VMC</strong>) framework distills the motion trajectories 
-        from the residual between noisy latent frames, namely motion vector <strong>$\delta v_t^n$</strong>. 
+        from the residual between consecutive (latent) frames, namely motion vector <strong>$\delta v_t^n$</strong> for $t>=0$. 
         Specifically, we fine-tune only the temporal attention layers of the key-frame generation model 
         by aligning the ground-truth and predicted motion vectors. 
         After training, the customized key-frame generator is leveraged for target motion-driven video generation 
