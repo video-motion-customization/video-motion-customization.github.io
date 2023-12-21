@@ -1299,18 +1299,258 @@
         </tr>
       </tbody>
     </table>
-    <br>
   </div>
 
   </div>
 </div>
 
 
-<div id="results" >
+<div id="results">
   <br>
-  <h2 class="tldr" style="font-size: 26px;">Comparisons to Baselines</h2>
-  <h3 class="tldr" style="font-size: 18px;"> To Be Updated</h3>
+  <div style='background-color: rgb(243, 242, 242)'>
+    <h2 class="tldr" style="font-size: 26px;"><br>Comparisons to Baselines</h2>
+    <h3 class="tldr" style="font-size: 18px;">VMC is compared against 4 state-of-the-art baselines<br>&#8680; &nbsp; VideoComposer, &nbsp; Gen-1, &nbsp; Tune A Video, &nbsp; Control A Video</h3>
+    <br>
+  </div>
+  <!-- <h3 class="tldr" style="font-size: 18px;"> To Be Updated</h3> -->
+  <div style='background-color: white;'>
+    <br>
+    <span style="display: inline-block; width: 100%; text-align: center; font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+      A car is moving. 	&nbsp; &#8680; &nbsp; A car is moving, <u style="font-weight: bold;">underwater</u>.
+    </span>
+    <br>
+    <br>
+    <table style="width: 65%;margin-left:auto;margin-right:auto; text-align: center; border-spacing: 4px; border-collapse: separate; ">
+      <tbody>
+        <tr>
+          <th>
+            <img src="static/gifs3/car_forest/input.gif" width="360">
+
+            <div style="font-weight: bold;">
+              Input Video<br><br>
+            </div>
+          </th>
+          <th>
+            <img src="static/comparisons/car_forest/car_underwater/vc.gif" width="360">
+
+            <div style="font-weight: bold;">
+              VideoComposer<br><br>
+            </div>
+          </th>
+          <th>
+            <img src="static/comparisons/car_forest/car_underwater/gen1.gif" width="360">
+
+            <div style="font-weight: bold;">
+              Gen-1<br><br>
+            </div>
+          </th>
+        </tr>
+        <tr>
+          <th>
+            <img src="static/gifs3/car_forest/car_underwater.gif" width="360">
+
+            <div style="font-weight: bold;">
+              Ours<br>
+            </div>
+          </th>
+          <th>
+            <img src="static/comparisons/car_forest/car_underwater/tav.gif" width="360">
+
+            <div style="font-weight: bold;">
+              Tune A Video<br>
+            </div>
+          </th>
+          <th>
+            <img src="static/comparisons/car_forest/car_underwater/cav.gif" width="360">
+
+            <div style="font-weight: bold;">
+              Control A Video<br>
+            </div>
+          </th>
+        </tr>
+      </tbody>
+    </table>
+  </div>
   <br>
+
+
+  <div style='background-color: rgb(243, 242, 242);'>
+    <br>
+    <span style="display: inline-block; width: 100%; text-align: center; font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+      Two sharks are moving. 	&nbsp; &#8680; &nbsp; Two <u style="font-weight: bold;">airplanes</u> are moving <u style="font-weight: bold;">in the sky</u>.
+    </span>
+    <br>
+    <br>
+    <table style="width: 65%;margin-left:auto;margin-right:auto; text-align: center; border-spacing: 4px; border-collapse: separate; ">
+      <tbody>
+        <tr>
+          <th>
+            <img src="static/gifs/sharks_swimming/input.gif" width="360">
+
+            <div style="font-weight: bold;">
+              Input Video<br><br>
+            </div>
+          </th>
+          <th>
+            <img src="static/comparisons/sharks_swimming/airplanes_sky/vc.gif" width="360">
+
+            <div style="font-weight: bold;">
+              VideoComposer<br><br>
+            </div>
+          </th>
+          <th>
+            <img src="static/comparisons/sharks_swimming/airplanes_sky/gen1.gif" width="360">
+
+            <div style="font-weight: bold;">
+              Gen-1<br><br>
+            </div>
+          </th>
+        </tr>
+        <tr>
+          <th>
+            <img src="static/gifs/sharks_swimming/airplanes_sky.gif" width="360">
+
+            <div style="font-weight: bold;">
+              Ours<br><br>
+            </div>
+          </th>
+          <th>
+            <img src="static/comparisons/sharks_swimming/airplanes_sky/tav.gif" width="360">
+
+            <div style="font-weight: bold;">
+              Tune A Video<br><br>
+            </div>
+          </th>
+          <th>
+            <img src="static/comparisons/sharks_swimming/airplanes_sky/cav.gif" width="360">
+
+            <div style="font-weight: bold;">
+              Control A Video<br><br>
+            </div>
+          </th>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <br>
+
+
+  <div style='background-color: white;'>
+    <span style="display: inline-block; width: 100%; text-align: center; font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+      An owl is taking off. &nbsp; &#8680; &nbsp; A <u style="font-weight: bold;">seagull</u> is taking off <u style="font-weight: bold;">on the sand</u>.
+    </span>
+    <br>
+    <br>
+    <table style="width: 65%;margin-left:auto;margin-right:auto; text-align: center; border-spacing: 4px; border-collapse: separate; ">
+      <tbody>
+        <tr>
+          <th>
+            <img src="static/gifs/bird_hand/input.gif" width="360">
+
+            <div style="font-weight: bold;">
+              Input Video<br><br>
+            </div>
+          </th>
+          <th>
+            <img src="static/comparisons/bird_hand/seagull_sand/vc.gif" width="360">
+
+            <div style="font-weight: bold;">
+              VideoComposer<br><br>
+            </div>
+          </th>
+          <th>
+            <img src="static/comparisons/bird_hand/seagull_sand/gen1.gif" width="360">
+
+            <div style="font-weight: bold;">
+              Gen-1<br><br>
+            </div>
+          </th>
+        </tr>
+        <tr>
+          <th>
+            <img src="static/gifs/bird_hand/seagull_sand.gif" width="360">
+
+            <div style="font-weight: bold;">
+              Ours<br><br>
+            </div>
+          </th>
+          <th>
+            <img src="static/comparisons/bird_hand/seagull_sand/tav.gif" width="360">
+
+            <div style="font-weight: bold;">
+              Tune A Video<br><br>
+            </div>
+          </th>
+          <th>
+            <img src="static/comparisons/bird_hand/seagull_sand/cav.gif" width="360">
+
+            <div style="font-weight: bold;">
+              Control A Video<br><br>
+            </div>
+          </th>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div style='background-color: rgb(243, 242, 242);'>
+    <br>
+    <span style="display: inline-block; width: 100%; text-align: center; font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+      Ink is spreading. &nbsp; &#8680; &nbsp; <u style="font-weight: bold;">Flower</u> is spreading.
+    </span>
+    <br>
+    <br>
+    <table style="width: 65%;margin-left:auto;margin-right:auto; text-align: center; border-spacing: 4px; border-collapse: separate; ">
+      <tbody>
+        <tr>
+          <th>
+            <img src="static/gifs3/ink_spreading/input.gif" width="360">
+
+            <div style="font-weight: bold;">
+              Input Video<br><br>
+            </div>
+          </th>
+          <th>
+            <img src="static/comparisons/ink_spreading/flower/vc.gif" width="360">
+
+            <div style="font-weight: bold;">
+              VideoComposer<br><br>
+            </div>
+          </th>
+          <th>
+            <img src="static/comparisons/ink_spreading/flower/gen1.gif" width="360">
+
+            <div style="font-weight: bold;">
+              Gen-1<br><br>
+            </div>
+          </th>
+        </tr>
+        <tr>
+          <th>
+            <img src="static/gifs3/ink_spreading/flower.gif" width="360">
+
+            <div style="font-weight: bold;">
+              Ours<br><br>
+            </div>
+          </th>
+          <th>
+            <img src="static/comparisons/ink_spreading/flower/tav.gif" width="360">
+
+            <div style="font-weight: bold;">
+              Tune A Video<br><br>
+            </div>
+          </th>
+          <th>
+            <img src="static/comparisons/ink_spreading/flower/cav.gif" width="360">
+
+            <div style="font-weight: bold;">
+              Control A Video<br><br>
+            </div>
+          </th>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </div>
 
 
@@ -1341,50 +1581,34 @@
 
 
 
-<!-- Paper poster 
-<section class="hero is-small is-light">
+<!-- Paper poster  -->
+<!-- <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title">Poster</h2>
+      <h2 class="title">Full Paper</h2>
 
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
+      <iframe  src="static/video-motion-customization(vmc)-arxiv.pdf" width="100%" height="800">
           </iframe>
         
       </div>
     </div>
-  </section>
-End paper poster -->
-
-
-<!--BibTex citation -->
-<!-- <div id="results" style="justify-content:center; align-items:center;">
-  <br>
-  <h2 class="tldr" style="font-size: 26px;">BibTex</h2>
-  <pre style="width: 65%;>
-	<code style="width: 65%;>
-	  @article{jeong2023vmc,
-	        title={VMC: Video Motion Customization using Temporal Attention Adaption for Text-to-Video Diffusion Models}, 
-	        author={Jeong, Hyeonho and Park, Geon Yeong and Ye, Jong Chul},
-		journal={arXiv preprint arXiv:2312.00845},
-	        year={2023},
-		}
-  	</code>
-  </pre>
-  <br>
-</div> -->
-	
-	
-<!--   <section class="section" id="BibTeX" style="width: 70%;>
-    <div class="container is-max-desktop content" style="width: 65%;">
-      <h2 class="tldr" style="font-size: 26px;">BibTex</h2>
-      <pre style="width: 65%;><code style="width: 65%;>@article{jeong2023vmc,
-        title={VMC: Video Motion Customization using Temporal Attention Adaption for Text-to-Video Diffusion Models}, 
-        author={Jeong, Hyeonho and Park, Geon Yeong and Ye, Jong Chul},
-	journal={arXiv preprint arXiv:2312.00845},
-        year={2023},
-}</code></pre>
-    </div>
   </section> -->
+<!-- End paper poster -->
+
+
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="tldr" style="font-size: 26px;">BibTex</h2>
+      <pre style="padding:1; border-radius: 20px;">
+        <code>@article{jeong2023vmc,
+                title={VMC: Video Motion Customization using Temporal Attention Adaption for Text-to-Video Diffusion Models}, 
+                author={Jeong, Hyeonho and Park, Geon Yeong and Ye, Jong Chul},
+          journal={arXiv preprint arXiv:2312.00845},
+                year={2023},
+        }
+        </code></pre>
+    </div>
+  </section>
 <!--End BibTex citation -->
 
 
