@@ -146,7 +146,7 @@
   <br>
   <!-- <h3 class="tldr" style="font-size: 26px;">Video Motion Customization</h3> -->
   <div style="text-align: center; display: flex; justify-content: center; align-items: center;">
-    <h3 style="width: 65%;">
+    <h3 style="width: 70%;">
       <span class="dnerf" style="text-align: center; font-size: 20px;">Video Motion Customization</span> 
       refers to the task of adapting pre-trained video generative models to create videos 
       that feature a particular motion across various visual contexts and scenes.
@@ -654,9 +654,9 @@
         </tr>
       </tbody>
     </table>
-    <br>
+    <br><br>
 
-    <table style="width: 98%;margin-left:auto;margin-right:auto; text-align: center; border-spacing: 4px; border-collapse: separate; ">
+    <!-- <table style="width: 98%;margin-left:auto;margin-right:auto; text-align: center; border-spacing: 4px; border-collapse: separate; ">
       <tbody>
         <tr>
           <th>
@@ -664,7 +664,7 @@
 
               <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
                 Input Video of Motion <i style="color: darkmagenta">M</i><br>
-                (Train VDM on the <u>Inverted Video</u> of the input above,<br> to learn extremely unprobable motion in real-world)
+                (Train VDM on the <u>Reversed Video</u> of the input above,<br> to learn extremely unprobable motion in real-world)
               </div>
           </th>
           <th>
@@ -691,7 +691,7 @@
         </tr>
       </tbody>
     </table>
-    <br><br>
+    <br><br> -->
   </div>
 
   <div style='background-color: rgb(243, 242, 242)'>
@@ -1554,46 +1554,251 @@
 </div>
 
 
-
-<!-- Video carousel -->
-<!-- <section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
+<div id="results">
+  <div style='background-color: rgb(255, 255, 255)'>
+    <h2 class="tldr" style="font-size: 26px;"><br>Video Style Transfer</h2>
   </div>
-</section> -->
-<!-- End video carousel -->
+  <div style='background-color: white;'>
+    <table style="width: 65%;margin-left:auto;margin-right:auto; text-align: center; border-spacing: 6px; border-collapse: separate; ">
+      <tbody>
+        <tr>
+          <th>
+            <div style="font-weight: bold;">
+              <span style="display: inline-block; width: 100%; text-align: center; font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+                Input Video
+              </span>
+            </div>
+            <img src="static/gifs/child_bike/input.gif" width="360">
+          </th>
+          <th>
+            <div style="font-weight: bold;">
+              <span style="display: inline-block; width: 100%; text-align: center; font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+                Starry Night by Vincent Van Gogh.
+              </span>
+            </div>
+            <img src="static/style-transfer/child_bike/starry_van_gogh.gif" width="360">
+          </th>
+          <th>
+            <div style="font-weight: bold;">
+              <span style="display: inline-block; width: 100%; text-align: center; font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+                Input Video
+              </span>
+            </div>
+            <img src="static/gifs/car_turn/input.gif" width="360">
+          </th>
+          <th>
+            <div style="font-weight: bold;">
 
+              <span style="display: inline-block; width: 100%; text-align: center; font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+                Oil painting of flowers.
+              </span>
+            </div>
+            <img src="static/style-transfer/car_turn/oil_flowers.gif" width="360">
+          </th>
+        </tr>
 
+        <tr>
+          <th>
+            <div style="font-weight: bold;">
+              <span style="display: inline-block; width: 100%; text-align: center; font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+                Input Video
+              </span>
+            </div>
+            <img src="static/gifs3/car_forest/input.gif" width="360">
+          </th>
+          <th>
+            <div style="font-weight: bold;">
+              <span style="display: inline-block; width: 100%; text-align: center; font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+                Classic anime from 1990.
+              </span>
+            </div>
+            <img src="static/gifs3/car_forest/anime.gif" width="360">
+          </th>
+          <th>
+            <div style="font-weight: bold;">
+              <span style="display: inline-block; width: 100%; text-align: center; font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+                Input Video
+              </span>
+            </div>
+            <img src="static/gifs4/plane_sky2/input.gif" width="360">
+          </th>
+          <th>
+            <div style="font-weight: bold;">
+              <span style="display: inline-block; width: 100%; text-align: center; font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+                Starry Night by Vincent Van Gogh.
+              </span>
+            </div>
+            <img src="static/style-transfer/plane_sky2/starry_van_gogh.gif" width="360">
+          </th>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <br>
+</div>
 
-<!-- Paper poster  -->
-<!-- <section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Full Paper</h2>
-
-      <iframe  src="static/video-motion-customization(vmc)-arxiv.pdf" width="100%" height="800">
-          </iframe>
+<div id="results" style='background-color: rgb(243, 242, 242)'>
+  <div style='background-color: rgb(243, 242, 242)'>
+    <br>
+    <h2 class="tldr" style="font-size: 26px;">Backward Motion Customization</h2>
+    <h3 class="tldr" style="font-size: 18px; font-weight: 100;">We customize video diffusion model to learn extermely unprobable motions, <br>
+       backward motions from <u>reversed</u> real-world videos.</h3>
+  </div>  
+  <div style='background-color: rgb(243, 242, 242);'>
+    <table style="width: 65%;margin-left:auto;margin-right:auto; text-align: center; border-spacing: 4px; border-collapse: separate; ">
+      <tbody>
+        <tr>
+          <th>
+            <div style="font-weight: bold;">
+              <span style="display: inline-block; width: 100%; text-align: center; font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+                Real-world Video with Motion <i>M</i> <sup></sup>
+              </span>
+            </div>
+            <img src="static/gifs3/ink_spreading/input.gif" width="300">
+          </th>
+          <th>
+            <div style="font-weight: bold;">
+              <span style="display: inline-block; width: 100%; text-align: center; font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+                Reversed Video with Motion <i>M<sup>-1</sup></i>
+              </span>
+            </div>
+            <img src="static/backward-motion/ink_backward/reverse.gif" width="300">
+          </th>
+          <th>
+            <div style="font-weight: bold;">
+              <span style="display: inline-block; width: 100%; text-align: center; font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+                Ink + <i>M<sup>-1</sup></i> + In water
+              </span>
+            </div>
+            <img src="static/backward-motion/ink_backward/ink_water.gif" width="300">
+          </th>
+          <th>
+            <div style="font-weight: bold;">
+              <span style="display: inline-block; width: 100%; text-align: center; font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+                Jellyfish + <i>M<sup>-1</sup></i>
+              </span>
+            </div>
+            <img src="static/backward-motion/ink_backward/jellyfish.gif" width="300">
+          </th>
+        </tr>
         
-      </div>
-    </div>
-  </section> -->
-<!-- End paper poster -->
+        <tr>
+          <th>
+            <div style="font-weight: bold;">
+              <span style="display: inline-block; width: 100%; text-align: center; font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+                Real-world Video with Motion <i>M</i> <sup></sup>
+              </span> 
+            </div>
+            <img src="static/gifs/car/input.gif" width="300">
+          </th>
+          <th>
+            <div style="font-weight: bold;">
+              <span style="display: inline-block; width: 100%; text-align: center; font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+                Reversed Video with Motion <i>M<sup>-1</sup></i>
+              </span>
+            </div>
+            <img src="static/backward-motion/car_backward/reverse.gif" width="300">
+          </th>
+          <th>
+            <div style="font-weight: bold;">
+              <span style="display: inline-block; width: 100%; text-align: center; font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+                Car + <i>M<sup>-1</sup></i> + In desert
+              </span>
+            </div>
+            <img src="static/backward-motion/car_backward/car_desert.gif" width="300">
+          </th>
+          <th>
+            <div style="font-weight: bold;">
+              <span style="display: inline-block; width: 100%; text-align: center; font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+                Tank + <i>M<sup>-1</sup></i> + On the road
+              </span>
+            </div>
+            <img src="static/backward-motion/car_backward/tank_road.gif" width="300">
+          </th>
+        </tr>
+
+        <tr>
+          <th>
+            <div style="font-weight: bold;">
+              <span style="display: inline-block; width: 100%; text-align: center; font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+                Real-world Video with Motion <i>M</i> <sup></sup>
+              </span>
+            </div>
+            <img src="static/gifs3/car_forest/input.gif" width="300">
+            <br>
+          </th>
+          <th>
+            <div style="font-weight: bold;">
+              <span style="display: inline-block; width: 100%; text-align: center; font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+                Reversed Video with Motion <i>M<sup>-1</sup></i>
+              </span>
+            </div>
+            <img src="static/backward-motion/car_forest_backward/reverse.gif" width="300">
+            <br>
+          </th>
+          <th>
+            <div style="font-weight: bold;">
+              <span style="display: inline-block; width: 100%; text-align: center; font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+                Lamborghini + <i>M<sup>-1</sup></i> + In space
+              </span>
+            </div>
+            <img src="static/backward-motion/car_forest_backward/lamborghini_space.gif" width="300">
+            <br>
+          </th>
+          <th>
+            <div style="font-weight: bold;">
+              <span style="display: inline-block; width: 100%; text-align: center; font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+                Car + <i>M<sup>-1</sup></i> + Underwater
+              </span>
+            </div>
+            <img src="static/backward-motion/car_forest_backward/car_underwater.gif" width="300">
+            <br>
+          </th>
+        </tr>
+
+        <tr>
+          <th>
+            <div style="font-weight: bold;">
+              <span style="display: inline-block; width: 100%; text-align: center; font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+                Real-world Video with Motion <i>M</i> <sup></sup>
+              </span>
+            </div>
+            <img src="static/gifs2/seagull_skyline/input.gif" width="300">
+            <br><br>
+          </th>
+          <th>
+            <div style="font-weight: bold;">
+              <span style="display: inline-block; width: 100%; text-align: center; font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+                Reversed Video with Motion <i>M<sup>-1</sup></i>
+              </span>
+            </div>
+            <img src="static/gifs2/seagull_skyline_backward/input.gif" width="300">
+            <br><br>
+          </th>
+          <th>
+            <div style="font-weight: bold;">
+              <span style="display: inline-block; width: 100%; text-align: center; font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+                Eagle + <i>M<sup>-1</sup></i> + On edge
+              </span>
+            </div>
+            <img src="static/gifs2/seagull_skyline_backward/eagle_edge.gif" width="300">
+            <br><br>
+          </th>
+          <th>
+            <div style="font-weight: bold;">
+              <span style="display: inline-block; width: 100%; text-align: center; font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+                Duck + <i>M<sup>-1</sup></i> + Around a pond
+              </span>
+            </div>
+            <img src="static/gifs2/seagull_skyline_backward/duck_pond.gif" width="300">
+            <br><br>
+          </th>
+        </tr>
+      <br>  
+      </tbody>
+    </table>
+  </div>
+</div>
 
 
   <section class="section" id="BibTeX">
