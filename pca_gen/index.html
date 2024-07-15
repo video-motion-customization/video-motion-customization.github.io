@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open-Sora PCA</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="#" class="logo">Visualizing PCA features of Open-Sora DiT Blocks</a>
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="instructions">
+        <div class="container">
+            <p><b>Hover mouse</b> to play specific video</p>
+            <p><b>Press Enter</b> to play all videos synchronously</p>
+            <hr>
+            <p>Features of Synthetic videos using Open-Sora 1.2</p>
+            <p>Timestep used for extracting features: t=15 (Total timestpes are 30)</p>
+            <p>Block index starts from 0 to 27 (28 blocks in total)</p>
+            <p> Not sure how to visualize <i>'temporal attention maps'</i></p>
+            <hr>
+            <div id="block-selection">
+                <h3>Select Blocks to Visualize:</h3>
+                <button id="check-all">Check All</button>
+                <button id="uncheck-all">Uncheck All</button>
+                <div id="checkbox-container"></div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container center-image">
+            <img src="notation.png" alt="Notation" style="width: 50%; height: auto;">
+        </div>
+    </section>
+
+    <section id="home" class="videos">
+        <div class="container">
+            <h1>Generated Videos</h1>
+            <div class="video-row"></div>
+            
+            <h2>PCA Features</h2>
+            <div class="features">
+                <!-- Dynamically generated feature rows will go here -->
+                <div class="feature-row" id="feature-row-0"></div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
